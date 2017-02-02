@@ -1,0 +1,22 @@
+{
+  "name": "d3_visualizations",
+  "authors": [
+    "Sushmit Sarmah <sushmitsarmah@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^4.4.1",
+    "bootstrap": "^3.3.7",
+    "topojson": "^2.2.0"
+  }
+}

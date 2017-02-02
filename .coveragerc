@@ -1,0 +1,3 @@
+[run]
+source = d3_visualizations
+omit = d3_visualizations/test*

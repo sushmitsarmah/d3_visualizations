@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="${request.locale_name}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="pyramid web application">
+    <meta name="author" content="Pylons Project">	
+	<title>Total International Primary Energy Consumption(1980-2008)</title>
+	<link rel="stylesheet" href="${request.static_url('d3_visualizations:static/libs/bootstrap/dist/css/bootstrap.css')}">
+	<link rel="stylesheet" href="${request.static_url('d3_visualizations:static/css/style.css')}">
+</head>
+<body>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-sm-12">
+			<h1 style="color:#636363">Total International Primary Energy Consumption ( 1980 - 2008 )</h1>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-2">
+			<!-- years button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Year - <span id="selected_year"></span>
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" id="years">
+			  </ul>
+			</div>			
+		</div>
+		<div class="col-sm-5">
+			<div id="map-legend"></div>
+		</div>
+		<div class="col-sm-offset-1 col-sm-3">
+			<h5 style="margin-top:30px">Top 10 Countries (in Quadrillion Btu)</h5>
+		</div>		
+	</div>
+	
+	<div class="row">
+		<div class="col-sm-8">
+			<div id="chart"></div>
+		</div>
+		<div class="col-sm-4">
+			<div id="chart-side"></div>
+		</div>		
+	</div>
+	<div class="row">
+		<div class="col-sm-2">
+			<!-- countries button -->
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Country - <span id="selected_country"></span>
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" id="countries">
+			  </ul>
+			</div>			
+		</div>			
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="chart-mini"></div>
+		</div>
+	</div>
+</div>
+<footer class="container">
+	<div class="row">
+		<div class="col-sm-8">
+			<p>Total primary energy consumption by country and region in Quadrillion Btu. Figures are annual totals for the years 1980 through 2008, from EIA's International Energy Statistics site circa 2010.</p>
+		</div>
+		<div class="col-sm-4 pull-right">
+			<a href="https://catalog.data.gov/dataset/eia-data-total-international-primary-energy-consumption-6c124" target="_blank">Source: US Department of Energy / National Renewable Energy Laboratory</a>
+		</div>
+	</div>	
+</footer>
+
+<script type="text/javascript" src="${request.static_url('d3_visualizations:static/libs/jquery/dist/jquery.js')}"></script>
+<script type="text/javascript" src="${request.static_url('d3_visualizations:static/libs/d3/d3.js')}"></script>
+<script type="text/javascript" src="${request.static_url('d3_visualizations:static/libs/bootstrap/dist/js/bootstrap.js')}"></script>
+<script src="${request.static_url('d3_visualizations:static/js/energy_consumption.js')}"></script>
+
+</body>
+</html>
