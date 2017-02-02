@@ -124,7 +124,7 @@ function createCountriesDropdown(data){
 		.data(countries).enter()
 		.append("li")
 		.append("a")
-		.attr("href","#")
+		//.attr("href","#")
 		.text(String);
 
 	li.on('click', function(d){
@@ -144,7 +144,7 @@ function createYearsDropdown(data){
 		.data(years).enter()
 		.append("li")
 		.append("a")
-		.attr("href","#")
+		// .attr("href","#")
 		.text(String);
 
 	li.on('click', function(d){

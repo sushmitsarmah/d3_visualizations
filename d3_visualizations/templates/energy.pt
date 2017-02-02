@@ -2,13 +2,14 @@
 <html lang="${request.locale_name}">
 <head>
     <meta charset="utf-8">
+    <base href="/viz/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="pyramid web application">
     <meta name="author" content="Pylons Project">	
 	<title>Total International Primary Energy Consumption(1980-2008)</title>
-	<link rel="stylesheet" href="${request.static_url('d3_visualizations:static/libs/bootstrap/dist/css/bootstrap.css')}">
-	<link rel="stylesheet" href="${request.static_url('d3_visualizations:static/css/style.css')}">
+	<link rel="stylesheet" href="static/libs/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/style.css">
 </head>
 <body>
 
@@ -79,10 +80,10 @@
 	</div>	
 </footer>
 
-<script type="text/javascript" src="${request.static_url('d3_visualizations:static/libs/jquery/dist/jquery.js')}"></script>
-<script type="text/javascript" src="${request.static_url('d3_visualizations:static/libs/d3/d3.js')}"></script>
-<script type="text/javascript" src="${request.static_url('d3_visualizations:static/libs/bootstrap/dist/js/bootstrap.js')}"></script>
-<script src="${request.static_url('d3_visualizations:static/js/energy_consumption.js')}"></script>
+<script type="text/javascript" src="static/libs/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="static/libs/d3/d3.js"></script>
+<script type="text/javascript" src="static/libs/bootstrap/dist/js/bootstrap.js"></script>
+<script src="static/js/energy_consumption.js"></script>
 
 </body>
 </html>
