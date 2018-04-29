@@ -2,11 +2,11 @@
 <html lang="${request.locale_name}">
 <head>
     <meta charset="utf-8">
-    <base href="/viz/">
+    <base href="/">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="pyramid web application">
-    <meta name="author" content="Pylons Project">	
+    <meta name="author" content="Pylons Project">
 	<title>Total International Primary Energy Consumption(1980-2008)</title>
 	<link rel="stylesheet" href="static/libs/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="static/css/style.css">
@@ -32,23 +32,23 @@
 			  </button>
 			  <ul class="dropdown-menu" id="years">
 			  </ul>
-			</div>			
+			</div>
 		</div>
 		<div class="col-sm-5">
 			<div id="map-legend"></div>
 		</div>
 		<div class="col-sm-offset-1 col-sm-3">
 			<h5 style="margin-top:30px">Top 10 Countries (in Quadrillion Btu)</h5>
-		</div>		
+		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="col-sm-8">
 			<div id="chart"></div>
 		</div>
 		<div class="col-sm-4">
 			<div id="chart-side"></div>
-		</div>		
+		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-2">
@@ -60,8 +60,8 @@
 			  </button>
 			  <ul class="dropdown-menu" id="countries">
 			  </ul>
-			</div>			
-		</div>			
+			</div>
+		</div>
 	</div>
 	<div class="row">
 		<div class="col-sm-12">
@@ -77,7 +77,7 @@
 		<div class="col-sm-4 pull-right">
 			<a href="https://catalog.data.gov/dataset/eia-data-total-international-primary-energy-consumption-6c124" target="_blank">Source: US Department of Energy / National Renewable Energy Laboratory</a>
 		</div>
-	</div>	
+	</div>
 </footer>
 
 <script type="text/javascript" src="static/libs/jquery/dist/jquery.js"></script>

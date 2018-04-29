@@ -1,8 +1,4 @@
-FROM ubuntu:16.04
-
-RUN apt-get update -y && \
-	apt-get install -y python-pip python-dev curl && \
-	pip install --upgrade pip setuptools
+FROM python:3.7-rc-alpine3.7
 
 WORKDIR /app
 
